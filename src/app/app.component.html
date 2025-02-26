@@ -1,16 +1,36 @@
-<nav>
-    <a routerLink="/about">About</a>
-    <a routerLink="/activities">Activities</a>
-    <a routerLink="/education">Education</a>
-    <a routerLink="/experience">Experience</a>
-    <a routerLink="/projects">Projects</a>
-    <a routerLink="/resume">Resume</a>
-    <a routerLink="/contact">Contact</a>
-</nav>
-
-
-<h1>Aman Varchaswi</h1>
-<h2>Portfolio</h2>
-
-
+  <span class="navigation">
+  <nav id="desktop-nav">
+    <div class="logo">Aman Varchaswi</div>
+    <div>
+      <ul class="nav-links">
+        <li><a routerLink="/about">About</a></li>
+        <li><a routerLink="/activities">Activities</a></li>
+        <li><a routerLink="/education">Education</a></li>
+        <li><a routerLink="/experience">Experience</a></li>
+        <li><a routerLink="/projects">Projects</a></li>
+        <li><a routerLink="/resume">Resume</a></li>
+        <li><a routerLink="/contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Aman Varchaswi</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" (click)="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a (click)="toggleMenu()" routerLink="/about">About</a></li>
+        <li><a (click)="toggleMenu()" routerLink="/activities">Activities</a></li>
+        <li><a (click)="toggleMenu()" routerLink="/education">Education</a></li>
+        <li><a (click)="toggleMenu()" routerLink="/experience">Experience</a></li>
+        <li><a (click)="toggleMenu()" routerLink="/projects">Projects</a></li>
+        <li><a (click)="toggleMenu()" routerLink="/resume">Resume</a></li>
+        <li><a (click)="toggleMenu()" routerLink="/contact">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+</span>
 <router-outlet></router-outlet>

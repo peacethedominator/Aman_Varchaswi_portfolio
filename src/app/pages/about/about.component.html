@@ -1,2 +1,77 @@
-<h1>About Me</h1>
-<p>Hi, I'm Aman Varchaswi, a Software Developer with experience in Angular, .NET, and AWS.</p>
+<section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Aman Varchaswi</h1>
+        <p class="section__text__p2">Software Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            [routerLink]="'/resume'"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" [routerLink]="'/contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/aman-v-89861b90/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/peacethedominator'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.jpeg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2 years <br />Software Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Bachelors Of Technology<br />Electronics & Communication</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+                Software Developer with 1.5+ years of experience in the Information Technology and Services industry, specializing in the 
+                American Healthcare sector. Planned, designed, and developed new features and architecture changes, and implementing infrastructure solutions across 8+ 
+                project solutions.  
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
