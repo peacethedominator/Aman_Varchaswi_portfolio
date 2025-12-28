@@ -82,7 +82,7 @@ a:hover {
 }
 
 .hamburger-icon {
-  position: fixed;          /* 🔥 THIS IS THE KEY */
+  position: fixed;
   top: 7%;
   right: 8%;
   display: flex;
