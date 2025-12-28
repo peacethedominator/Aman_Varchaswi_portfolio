@@ -16,12 +16,12 @@
   <nav id="hamburger-nav">
     <div class="logo">Aman Varchaswi</div>
     <div class="hamburger-menu">
-      <div class="hamburger-icon" (click)="toggleMenu()">
+      <div class="hamburger-icon" [class.open]="menuOpen" (click)="toggleMenu()">
         <span></span>
         <span></span>
         <span></span>
       </div>
-      <div class="menu-links">
+      <div class="menu-links" [class.open]="menuOpen">
         <li><a (click)="toggleMenu()" routerLink="/about">About</a></li>
         <li><a (click)="toggleMenu()" routerLink="/activities">Activities</a></li>
         <li><a (click)="toggleMenu()" routerLink="/education">Education</a></li>
