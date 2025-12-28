@@ -1,6 +1,6 @@
 <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+        <img src="./assets/profile-pic.png" alt="Aman Varchaswi's profile picture" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
@@ -53,7 +53,13 @@
                 class="icon"
               />
               <h3>Experience</h3>
-              <p>2+ years <br />Software Development</p>
+              <p>{{ experienceYears }} years 
+                <span *ngIf="experienceMonths > 0">
+                  {{ experienceMonths }} months
+                </span>  
+                <br />
+                Software Development
+              </p>
             </div>
             <div class="details-container">
               <img
@@ -67,7 +73,11 @@
           </div>
           <div class="text-container">
             <p>
-                Software Developer with 2+ years of experience in the Information Technology and Services industry, specializing in the 
+                Software Developer with {{ experienceYears }} years 
+                  <span *ngIf="experienceMonths > 0">
+                    {{ experienceMonths }} months
+                  </span> 
+                of experience in the Information Technology and Services industry, specializing in the 
                 American Healthcare sector. Planned, designed, and developed new features and architecture changes, and implementing infrastructure solutions across 8+ 
                 project solutions.  
             </p>
