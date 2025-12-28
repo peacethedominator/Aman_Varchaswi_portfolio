@@ -82,17 +82,22 @@ a:hover {
 }
 
 .hamburger-icon {
-  position: fixed;
-  top: 7%;
-  right: 8%;
+  position: relative;   /* scrolls normally */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 24px;
   width: 30px;
   cursor: pointer;
+}
+
+.hamburger-icon.fixed {
+  position: fixed;
+  top: 7%;
+  right: 8%;
   z-index: 1001;
 }
+
 
 .hamburger-icon span {
   width: 100%;
